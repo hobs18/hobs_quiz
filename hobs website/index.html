@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>HOBS Smart Quiz</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="ambient ambient-three"></div>
+
+<div id="app">
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <section id="home-page" class="page active">
+
+        <div class="hero">
+            <p class="small-heading">HOBS • CLASS 12</p>
+
+            <h1>TEST YOUR<br>KNOWLEDGE!</h1>
+
+            <p class="subtitle">
+                Choose a subject and challenge yourself.
+            </p>
+        </div>
+
+        <div id="subjects-container"></div>
+
+    </section>
+
+
+    <!-- ================= CONFIGURATION PAGE ================= -->
+
+    <section id="config-page" class="page">
+
+        <div class="hero">
+
+            <p class="small-heading">
+                QUIZ CONFIGURATION
+            </p>
+
+            <h1>BEST OF LUCK!</h1>
+
+            <p id="selected-info" class="subtitle"></p>
+
+        </div>
+
+        <div class="config-card">
+
+            <h2>Select Difficulty</h2>
+
+            <div class="choice-row">
+
+                <button class="choice difficulty" data-value="Easy">
+                    Easy
+                </button>
+
+                <button class="choice difficulty" data-value="Normal">
+                    Normal
+                </button>
+
+                <button class="choice difficulty" data-value="Hard">
+                    Hard
+                </button>
+
+            </div>
+
+
+            <h2>Number of MCQs</h2>
+
+            <div class="choice-row">
+
+                <button class="choice count" data-value="5">
+                    5
+                </button>
+
+                <button class="choice count" data-value="10">
+                    10
+                </button>
+
+                <button class="choice count" data-value="15">
+                    15
+                </button>
+
+            </div>
+
+
+            <button id="start-button" class="main-button">
+                START QUIZ →
+            </button>
+
+            <button id="back-button" class="text-button">
+                ← Change Chapter
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUIZ PAGE ================= -->
+
+    <section id="quiz-page" class="page">
+
+        <div class="quiz-top">
+
+            <span id="quiz-subject"></span>
+
+            <span id="question-number">
+                Question 1 of 10
+            </span>
+
+        </div>
+
+
+        <div class="progress-container">
+
+            <div id="progress-bar"></div>
+
+        </div>
+
+
+        <div class="question-card">
+
+            <p id="question-text"></p>
+
+        </div>
+
+
+        <div id="answers-container" class="answers-grid"></div>
+
+
+        <button id="next-button" class="main-button">
+            NEXT →
+        </button>
+
+    </section>
+
+
+    <!-- ================= RESULTS PAGE ================= -->
+
+    <section id="results-page" class="page">
+
+        <div class="hero">
+
+            <p class="small-heading">
+                QUIZ COMPLETE
+            </p>
+
+            <h1 id="result-message">
+                AWESOME JOB!
+            </h1>
+
+        </div>
+
+
+        <div class="score-circle">
+
+            <div class="score-inner">
+
+                <strong id="percentage">
+                    0%
+                </strong>
+
+                <span id="score-text">
+                    Score: 0 / 10
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div id="grade">
+            Grade: A*
+        </div>
+
+
+        <div class="result-buttons">
+
+            <button id="retry-button" class="main-button">
+                TRY AGAIN
+            </button>
+
+            <button id="home-button" class="secondary-button">
+                HOME PAGE
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
